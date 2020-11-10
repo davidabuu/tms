@@ -1,0 +1,22 @@
+nav{
+    top: 0 !important;
+    left: 0 !important;
+    position: fixed !important;
+    width: 100% !important;
+    z-index: 4;
+}
+header{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../img/IMG_20190607_130604_360.jpg')center/cover no-repeat;
+    height:220vh;
+}
+.height{
+    height: 100vh;
+}
+.title-underline{
+    width: 200px;
+    height: 7px;
+    margin: 0 auto;
+    }
+img{
+    object-fit: cover;
+}
