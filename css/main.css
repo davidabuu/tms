@@ -1,9 +1,12 @@
+body{
+    font-family: 'Montserrat', sans-serif !important;
+}
 nav{
     top: 0 !important;
     left: 0 !important;
     position: fixed !important;
     width: 100% !important;
-    z-index: 4;
+    z-index: 1;
 }
 header{
     background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../img/IMG_20190607_130604_360.jpg')center/cover no-repeat;
@@ -12,11 +15,43 @@ header{
 .height{
     height: 100vh;
 }
+.hovers{
+    position: relative;
+}
+.hovers::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: lightblue;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transition: all 1s ease;
+}
+.hovers:hover::after{
+    left: 0;
+    width: 100%;
+}
+.hovers:hover{
+    color: coral;
+}
 .title-underline{
     width: 200px;
-    height: 7px;
+    height: 5px;
     margin: 0 auto;
     }
 img{
     object-fit: cover;
+}
+.inner{
+    overflow: hidden;
+}
+.container{
+    margin-top: 8%;
+}
+.inner img{
+    transition: all 500ms ease;
+}
+.inner:hover img{
+    transform: scale(1.5);
 }
