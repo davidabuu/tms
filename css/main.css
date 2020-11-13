@@ -1,5 +1,5 @@
 body{
-    font-family: 'Montserrat', sans-serif !important;
+    font-family: Arial, Helvetica, sans-serif !important;
 }
 nav{
     top: 0 !important;
@@ -26,14 +26,34 @@ header{
     position: absolute;
     bottom: 0%;
     left: 50%;
-    transition: all 1s ease;
+    transition: all 0.5s ease-in-out;
+}
+.hoverss::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: lightblue;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transition: all 0.5s ease-in-out;
+}
+.hoverss:hover::after{
+    left: 0;
+    width: 100%;
+}
+.footers{
+    background-color: rgb(11, 11, 48);
+}
+.hoverss{
+    position: relative;
+}
+i:hover{
+    color: rgb(97, 230, 185) !important;
 }
 .hovers:hover::after{
     left: 0;
     width: 100%;
-}
-.hovers:hover{
-    color: coral;
 }
 .title-underline{
     width: 200px;
@@ -66,6 +86,9 @@ img{
     header h1{
         font-size: 20px !important;
         margin-bottom: 70px;
+    }
+    img{
+        height: 15rem !important;
     }
     section h1{
         font-size: 25px;
